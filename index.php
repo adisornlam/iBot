@@ -1,7 +1,5 @@
 <?php
-echo "Hello iBot.";
-exit();
-    $accessToken = "";//copy Channel access token ตอนที่ตั้งค่ามาใส่
+    $accessToken = "PthQHPDy0/tQVhN5OFxYjF3+blSYfYlh5wp1jAa5rOj4MRpSvlGtvJ+1xm7nQ//nqdo9r9A01b3yQWlFS/t+7nBF7wE16EPkLczdwIUdx7FaMYnD/CIvP6LCK+5XkYkGSKjTg7pwhVllrNooCXbZqgdB04t89/1O/w1cDnyilFU=";//copy Channel access token ตอนที่ตั้งค่ามาใส่
     
     $content = file_get_contents('php://input');
     $arrayJson = json_decode($content, true);
