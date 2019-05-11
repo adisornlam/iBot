@@ -12,10 +12,10 @@
     $message = $arrayJson['events'][0]['message']['text'];
 #ตัวอย่าง Message Type "Text"
     if($message == "สวัสดี"){
-        $msg = 'สวัสดีจ้า มีอะไรให้น้อง iBot ช่วยคะ กดส่งตัวเลขมาได้เลยค่ะ \r\n';
-        $msg .= 'กด 1 ที่อยู่คอนโด\r\n'; 
-        $msg .= 'กด 2 บัตรประชาชนพ่อ\r\n';
-        $msg .= 'กด 3 บัตรประชาชนแม่\r\n';
+        $msg = "สวัสดีจ้า มีอะไรให้น้อง iBot ช่วยคะ กดส่งตัวเลขมาได้เลยค่ะ \n";
+        $msg .= "กด 1 ที่อยู่คอนโด\n"; 
+        $msg .= "กด 2 บัตรประชาชนพ่อ \n";
+        $msg .= "กด 3 บัตรประชาชนแม่ \n";
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = $msg;
