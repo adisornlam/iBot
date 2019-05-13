@@ -41,6 +41,18 @@
         $arrayPostData['messages'][0]['packageId'] = "11538";
         $arrayPostData['messages'][0]['stickerId'] = "51626504";
         replyMsg($arrayHeader,$arrayPostData);
+    }else if($message == "น่ารัก"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "sticker";
+        $arrayPostData['messages'][0]['packageId'] = "11538";
+        $arrayPostData['messages'][0]['stickerId'] = "51626499";
+        replyMsg($arrayHeader,$arrayPostData);
+    }else if(($message == "สุดยอด") OR ($message == "ยอดเยี่ยม") OR ($message == "เยี่ยม")){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "sticker";
+        $arrayPostData['messages'][0]['packageId'] = "11537";
+        $arrayPostData['messages'][0]['stickerId'] = "52002735";
+        replyMsg($arrayHeader,$arrayPostData);
     }
     
     
