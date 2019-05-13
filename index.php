@@ -35,7 +35,7 @@
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "1xxxxxxxxxxxx";
         replyMsg($arrayHeader,$arrayPostData);
-    }else if($message == 555){
+    }else if(($message == 55) OR ($message == 555) OR ($message == 5555)){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "sticker";
         $arrayPostData['messages'][0]['packageId'] = "11538";
