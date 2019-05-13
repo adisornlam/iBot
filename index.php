@@ -35,6 +35,12 @@
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "1xxxxxxxxxxxx";
         replyMsg($arrayHeader,$arrayPostData);
+    }else if($message == 555){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "sticker";
+        $arrayPostData['messages'][0]['packageId'] = "11538";
+        $arrayPostData['messages'][0]['stickerId'] = "51626504";
+        replyMsg($arrayHeader,$arrayPostData);
     }
     
     
