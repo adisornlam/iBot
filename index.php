@@ -53,6 +53,12 @@
         $arrayPostData['messages'][0]['packageId'] = "11537";
         $arrayPostData['messages'][0]['stickerId'] = "52002735";
         replyMsg($arrayHeader,$arrayPostData);
+    }else if(($message == "ok") OR ($message == "เค") OR ($message == "โอเคจ้า") OR ($message == "โอเค")){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "sticker";
+        $arrayPostData['messages'][0]['packageId'] = "11537";
+        $arrayPostData['messages'][0]['stickerId'] = "52002740";
+        replyMsg($arrayHeader,$arrayPostData);
     }
     
     
