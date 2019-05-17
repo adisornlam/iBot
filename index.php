@@ -59,7 +59,7 @@
         $arrayPostData['messages'][0]['packageId'] = "11537";
         $arrayPostData['messages'][0]['stickerId'] = "52002740";
         replyMsg($arrayHeader,$arrayPostData);
-    }else if(){   
+    }else if($message == "วาดรูป"){   
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "line://app/1573340913-29AmBnaD";
