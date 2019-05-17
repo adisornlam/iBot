@@ -16,6 +16,7 @@
         $msg .= "กด 1 ที่อยู่คอนโด\n"; 
         $msg .= "กด 2 บัตรประชาชนพ่อ \n";
         $msg .= "กด 3 บัตรประชาชนแม่ \n";
+        $msg .= "กด 4 วาดรูป \n";
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = $msg;
@@ -59,7 +60,7 @@
         $arrayPostData['messages'][0]['packageId'] = "11537";
         $arrayPostData['messages'][0]['stickerId'] = "52002740";
         replyMsg($arrayHeader,$arrayPostData);
-    }else if($message == "วาดรูป"){   
+    }else if($message == 4){   
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "text";
         $arrayPostData['messages'][0]['text'] = "line://app/1573340913-29AmBnaD";
